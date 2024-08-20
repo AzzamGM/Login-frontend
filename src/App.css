@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background: #16393f;
+  background: repeating-linear-gradient(0deg, #16393f 0, #16393f 20%, transparent 0, transparent 50%), repeating-linear-gradient(-135deg, #63ae45 0, #63ae45 4%, transparent 0, transparent 50%);
+  background-size: 15em 15em;
+  background-color: #16393f;
+  opacity: 0.90;
+}
+
+.login-card {
+  display: grid;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-logocontainer{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%; 
+  height: 100px;
+  overflow: hidden; 
+  background-color: white; 
+  margin-bottom: 25px;
+}
+.login-logo {
+  background: center;
+  background-size: contain;
+  width: 100%; 
+  height: 100%;
+  display: block; 
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #16393f;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login-button:hover {
+  background-color: #0c2023 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register-button {
+  width: 40%;
+  background-color: #16393f;
+  color: white;
 }
+
+.register-button:hover {
+  background-color: #0c2023 !important;
+}
+
+.secondary {
+  margin-top: 10px;
+}
+
+.dashboard-bar {
+  background-color: #16393f;
+  padding: 0px;
+}
+
+.dashboard-bg {
+  background: repeating-linear-gradient(0deg, #16393f 0, #16393f 20%, transparent 0, transparent 50%), repeating-linear-gradient(-135deg, #63ae45 0, #63ae45 4%, transparent 0, transparent 50%);
+  background-size: 15em 15em;
+  background-color: #16393f;
+  opacity: 0.90;
+  height: 100%;
+  overflow: hidden;
+  padding: 35px;
+}
+
+.menu-button:hover {
+  background: #63ae45 !important;
+}
+.logout-button:hover {
+  background: rgb(176, 0, 0) !important;
+}
+
+:where(.css-dev-only-do-not-override-1pg9a38).ant-menu-dark.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-dark>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-dark.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-1pg9a38).ant-menu-dark>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
+  background-color: #63ae45 !important;
+  transition: 0.5s;
+}
+
+
+.paragraph-title {
+  color: #63ae45; 
+  font-size: 56px;
+  line-height: 1.6;
+  font-family: 'DINNextLTArabic-Medium', sans-serif;
+  font-weight: bold;
+  margin: 25px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paragraph-text {
+  color: #16393f; 
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'DINNextLTArabic-Medium', sans-serif;
+  margin: 25px;
+  font-size: 24px;
+}
+
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #16393f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: #63ae45;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.feature-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background-color: #ffffff;
+  border: 2px solid #16393f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature-item h3 {
+  color: #16393f;
+}
+
+.footer {
+  background-color: #16393f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
